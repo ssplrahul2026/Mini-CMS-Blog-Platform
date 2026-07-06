@@ -1,13 +1,40 @@
 
 using Microsoft.EntityFrameworkCore;
 using MiniCMS.Data;
+using MiniCMS.Repositories.Implementations;
+using MiniCMS.Repositories.Interfaces;
+using MiniCMS.Services.Implementations;
+using MiniCMS.Services.Interfaces;
+
+
+
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(
+builder.Services.AddDbContext<ApplicationDbContext>(options =>options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")));
-// Add services to the container.
+//adding services 
+
+
+
+
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ITagRepository, TagRepository>();
+
+builder.Services.AddScoped<ITagService, TagService>();
+
+builder.Services.AddScoped<IPostRepository, PostRepository>();
+
+builder.Services.AddScoped<IPostService, PostService>();
+
+
+
+
 
 var app = builder.Build();
 
@@ -28,7 +55,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Category}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 

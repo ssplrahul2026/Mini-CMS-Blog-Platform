@@ -29,3 +29,169 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+
+.card {
+    border-radius: 15px;
+}
+
+.card-header {
+    padding: 18px 24px;
+    border-radius: 15px 15px 0 0 !important;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+.alert {
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card-header {
+    padding: 18px 24px;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+    .form-control:focus {
+        box-shadow: 0 0 0 0.2rem rgba(13,110,253,.15);
+    }
+
+.btn {
+    border-radius: 8px;
+}
+
+.form-label {
+    margin-bottom: 8px;
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .card-header {
+        border-radius: 15px 15px 0 0 !important;
+    }
+
+    .table tbody tr:hover {
+        background: #f8f9fa;
+        transition: .3s;
+    }
+
+    .btn {
+        border-radius: 8px;
+    }
+
+    .badge {
+        font-size: 14px;
+    }
+
+    .table td,
+    .table th {
+        vertical-align: middle;
+    }
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .card-header {
+        padding: 18px 24px;
+    }
+
+    .form-control {
+        border-radius: 10px;
+    }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(13,110,253,.15);
+        }
+
+    .btn {
+        border-radius: 8px;
+    }
+
+    .form-label {
+        margin-bottom: 8px;
+    }
+
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .card-header {
+        padding: 18px 24px;
+        border-radius: 15px 15px 0 0 !important;
+    }
+
+    .form-control {
+        border-radius: 10px;
+    }
+
+    .btn {
+        border-radius: 8px;
+    }
+
+    .alert {
+        border-radius: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    body {
+        background-color: #f8f9fa;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .table {
+        background-color: white;
+    }
+
+    .btn {
+        margin-right: 5px;
+    }
+
+
+
+    .container {
+        max-width: 900px;
+    }
+
+    .form-label {
+        font-weight: 500;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .form-check {
+        margin-bottom: 8px;
+    }
+
+    .btn {
+        min-width: 90px;
+    }

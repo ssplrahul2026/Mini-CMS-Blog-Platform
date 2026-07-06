@@ -6,34 +6,39 @@ namespace MiniCMS.Repositories.Implementations
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        public Task AddAsync(T entity)
-        {
-            throw new NotImplementedException();
-        }
+        private readonly ApplicationDbContext _context;
 
-        public void Delete(T entity)
-        {
-            throw new NotImplementedException();
-        }
+        private readonly DbSet<T> _dbSet;
 
-        public Task<IEnumerable<T>> GetAllAsync()
+        public Repository(ApplicationDbContext context)
         {
-            throw new NotImplementedException();
-        }
+            _context = context;
 
-        public Task<T?> GetByIdAsync(int id)
+            _dbSet = _context.Set<T>();
+        }
+        public async Task<IEnumerable<T>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _dbSet.ToListAsync();
         }
-
-        public Task SaveAsync()
+        public async Task<T?> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _dbSet.FindAsync(id);
         }
-
+        public async Task AddAsync(T entity)
+        {
+            await _dbSet.AddAsync(entity);
+        }
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Update(entity);
+        }
+        public void Delete(T entity)
+        {
+            _dbSet.Remove(entity);
+        }
+        public async Task SaveAsync()
+        {
+            await _context.SaveChangesAsync();
         }
     }
 }
