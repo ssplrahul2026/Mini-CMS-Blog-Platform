@@ -16,7 +16,7 @@
              class="text-danger mb-3">
         </div>
 
-        <!-- Title -->
+        
         <div class="mb-3">
             <label asp-for="Title" class="form-label"></label>
 
@@ -28,7 +28,7 @@
                   class="text-danger"></span>
         </div>
 
-        <!-- Slug -->
+       
         <div class="mb-3">
             <label asp-for="Slug" class="form-label"></label>
 
@@ -40,7 +40,7 @@
                   class="text-danger"></span>
         </div>
 
-        <!-- Body -->
+       
         <div class="mb-4">
             <label asp-for="Body" class="form-label"></label>
 
@@ -55,7 +55,7 @@
 
         <div class="row">
 
-            <!-- Category -->
+           
             <div class="col-md-6 mb-4">
 
                 <label asp-for="CategoryId" class="form-label">
@@ -75,7 +75,7 @@
 
             </div>
 
-            <!-- Cover Image -->
+            
             <div class="col-md-6 mb-4">
 
                 <label asp-for="CoverImage"
@@ -90,7 +90,7 @@
 
         </div>
 
-        <!-- Tags -->
+        
         <div class="mb-4">
 
             <label class="form-label">
@@ -127,7 +127,7 @@
 
         </div>
 
-        <!-- Publish -->
+       
         <div class="form-check mb-4">
 
             <input asp-for="IsPublished"
@@ -140,7 +140,7 @@
 
         </div>
 
-        <!-- Buttons -->
+        
         <div class="mt-4">
 
             <button type="submit"
@@ -163,9 +163,3 @@
 
 </div>
 
-@section Scripts
-{
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}

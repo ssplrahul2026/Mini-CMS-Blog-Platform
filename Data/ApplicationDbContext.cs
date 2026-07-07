@@ -1,16 +1,20 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MiniCMS.Models.Entities;
+using MiniCMS.Models.Identity;
 
 namespace MiniCMS.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext
+        : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public ApplicationDbContext(
+            DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
 
-        // Tables
+       
         public DbSet<Post> Posts { get; set; }
 
         public DbSet<Category> Categories { get; set; }
@@ -25,17 +29,17 @@ namespace MiniCMS.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configure PostTag composite key
+            //  composite key
             modelBuilder.Entity<PostTag>()
                 .HasKey(pt => new { pt.PostId, pt.TagId });
 
-            // Post -> PostTag
+            // Post= PostTag
             modelBuilder.Entity<PostTag>()
                 .HasOne(pt => pt.Post)
                 .WithMany(p => p.PostTags)
                 .HasForeignKey(pt => pt.PostId);
 
-            // Tag -> PostTag
+            // Tag= PostTag
             modelBuilder.Entity<PostTag>()
                 .HasOne(pt => pt.Tag)
                 .WithMany(t => t.PostTags)

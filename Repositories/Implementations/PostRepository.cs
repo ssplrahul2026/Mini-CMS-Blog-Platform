@@ -18,8 +18,9 @@ namespace MiniCMS.Repositories.Implementations
         public async Task<IEnumerable<Post>> GetAllPostsAsync()
         {
             return await _context.Posts
-                .Include(p => p.Category)
-                .Include(p => p.PostTags)
+                .Where(x => !x.IsDeleted)
+                .Include(x => x.Category)
+                .Include(x => x.PostTags)
                     .ThenInclude(pt => pt.Tag)
                 .ToListAsync();
         }
@@ -27,12 +28,13 @@ namespace MiniCMS.Repositories.Implementations
         public async Task<Post?> GetPostDetailsByIdAsync(int id)
         {
             return await _context.Posts
-                .Include(p => p.Category)
-                .Include(p => p.PostTags)
+                .Where(x => x.PostId == id && !x.IsDeleted)
+                .Include(x => x.Category)
+                .Include(x => x.PostTags)
                     .ThenInclude(pt => pt.Tag)
-                .FirstOrDefaultAsync(p => p.PostId == id);
+                .FirstOrDefaultAsync();
         }
 
-       
+
     }
 }

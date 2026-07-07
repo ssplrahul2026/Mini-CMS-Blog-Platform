@@ -13,19 +13,19 @@ namespace MiniCMS.Services.Implementations
             _tagRepository = tagRepository;
         }
 
-        // Get All Tags
+       
         public async Task<IEnumerable<Tag>> GetAllAsync()
         {
             return await _tagRepository.GetAllAsync();
         }
 
-        // Get Tag By Id
+        
         public async Task<Tag?> GetByIdAsync(int id)
         {
             return await _tagRepository.GetByIdAsync(id);
         }
 
-        // Create Tag
+      
         public async Task AddAsync(Tag tag)
         {
             tag.Name = tag.Name.Trim();
@@ -35,7 +35,7 @@ namespace MiniCMS.Services.Implementations
             await _tagRepository.SaveAsync();
         }
 
-        // Update Tag
+      
         public async Task UpdateAsync(Tag tag)
         {
             var existingTag = await _tagRepository.GetByIdAsync(tag.TagId);
@@ -52,7 +52,7 @@ namespace MiniCMS.Services.Implementations
             await _tagRepository.SaveAsync();
         }
 
-        // Delete Tag
+        
         public async Task DeleteAsync(int id)
         {
             var tag = await _tagRepository.GetByIdAsync(id);

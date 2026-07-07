@@ -1,3 +1,6 @@
+wwwroot\css\dashboard.css
+wwwroot\css\login.css
+wwwroot\css\register.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
@@ -61,6 +64,13 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\uploads\coverImages\29edbbdf-9298-4765-bb96-09c0ebfd29d0.jpg
+wwwroot\uploads\coverImages\5be34ebf-a70c-4957-a9b6-064eede1fe11.png
+wwwroot\uploads\coverImages\abbed1ac-0254-4591-994c-f80471856bc5.jpg
+wwwroot\uploads\coverImages\brain (2).png
+wwwroot\uploads\coverImages\c43e24a3-488e-47a5-8e28-6ecd7b1ade36.png
+wwwroot\uploads\coverImages\dc8e005e-364c-4693-8866-15969107079b.webp
+wwwroot\uploads\coverImages\f82750fa-0b06-4620-a3ba-aef55641f67c.png
 D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\LICENSE.txt
 D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.slim.min.map
 D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.slim.min.js
@@ -122,4 +132,7 @@ D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-gr
 D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\js\site.js
 D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\favicon.ico
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\css\login.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\css\register.css
 D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\css\site.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\css\dashboard.css

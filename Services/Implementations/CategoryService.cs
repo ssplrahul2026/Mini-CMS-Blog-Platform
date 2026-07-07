@@ -22,7 +22,7 @@ namespace MiniCMS.Services.Implementations
         }
         public async Task AddAsync(Category category)
         {
-            //category.Name = category.Name.Trim();
+            
 
             await _categoryRepository.AddAsync(category);
 
