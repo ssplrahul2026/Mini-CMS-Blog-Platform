@@ -37,6 +37,7 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+
 builder.Services.AddScoped<ITagRepository, TagRepository>();
 
 builder.Services.AddScoped<ITagService, TagService>();
@@ -45,8 +46,13 @@ builder.Services.AddScoped<IPostRepository, PostRepository>();
 
 builder.Services.AddScoped<IPostService, PostService>();
 
+builder.Services.AddScoped<ICommentRepository, CommentRepository>();
 
+builder.Services.AddScoped<ICommentService, CommentService>();
 
+builder.Services.AddScoped<IDashboardRepository, DashboardRepository>();
+
+builder.Services.AddScoped<IDashboardService, DashboardService>();
 
 
 var app = builder.Build();

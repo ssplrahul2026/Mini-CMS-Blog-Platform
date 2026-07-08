@@ -1,0 +1,206 @@
+﻿
+@model IEnumerable<MiniCMS.Models.Entities.Comment>
+
+@{
+    ViewData["Title"] = "Comments";
+}
+
+<div class="container-fluid py-4" style="background:#f4f7fc; min-height:100vh;">
+
+   
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+
+            <a asp-controller="Dashboard"
+               asp-action="Index"
+               class="btn btn-outline-dark rounded-pill px-4 mb-3">
+
+                <i class="bi bi-arrow-left"></i>
+                Back to Dashboard
+
+            </a>
+
+            <h2 class="fw-bold text-primary mb-1">
+                Comment Management
+            </h2>
+
+            <p class="text-muted mb-0">
+                Review, approve, and manage comments submitted by users.
+            </p>
+
+        </div>
+
+        <span class="badge bg-primary fs-6 px-4 py-2 rounded-pill">
+            Total Comments : @Model.Count()
+        </span>
+
+    </div>
+
+    <div class="card border-0 shadow rounded-4">
+
+        <div class="card-header bg-primary text-white rounded-top-4 py-3">
+
+            <h5 class="mb-0">
+                <i class="bi bi-chat-left-text"></i>
+                Comments
+            </h5>
+
+        </div>
+
+        <div class="card-body p-0">
+
+            @if (!Model.Any())
+            {
+                <div class="text-center py-5">
+
+                    <i class="bi bi-chat-square-text display-1 text-muted"></i>
+
+                    <h4 class="mt-3 text-muted">
+                        No Comments Found
+                    </h4>
+
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+
+                    <table class="table table-hover align-middle mb-0">
+
+                        <thead class="table-light">
+
+                            <tr>
+
+                                <th width="70">ID</th>
+
+                                <th>Author</th>
+
+                                <th>Comment</th>
+
+                                <th>Post</th>
+
+                                <th width="140">Date</th>
+
+                                <th width="120">Status</th>
+
+                                <th width="220" class="text-center">
+                                    Actions
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+
+                                    <td>
+                                        <strong>#@item.CommentId</strong>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="fw-semibold">
+                                            @item.AuthorName
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        @if (item.Body.Length > 70)
+                                        {
+                                            @(item.Body.Substring(0, 70) + "...")
+                                        }
+                                        else
+                                        {
+                                            @item.Body
+                                        }
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="badge bg-light text-dark border">
+
+                                            @item.Post?.Title
+
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        @item.CreatedDate.ToString("dd MMM yyyy")
+
+                                    </td>
+
+                                    <td>
+
+                                        @if (item.Approved)
+                                        {
+                                            <span class="badge bg-success rounded-pill px-3">
+
+                                                <i class="bi bi-check-circle"></i>
+                                                Approved
+
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-warning text-dark rounded-pill px-3">
+
+                                                <i class="bi bi-clock-history"></i>
+                                                Pending
+
+                                            </span>
+                                        }
+
+                                    </td>
+
+                                    <td class="text-center">
+
+                                        @if (!item.Approved)
+                                        {
+                                            <a asp-action="Approve"
+                                               asp-route-id="@item.CommentId"
+                                               class="btn btn-success btn-sm rounded-pill me-2">
+
+                                                <i class="bi bi-check-lg"></i>
+                                                Approve
+
+                                            </a>
+                                        }
+
+                                        <a asp-action="Delete"
+                                           asp-route-id="@item.CommentId"
+                                           class="btn btn-danger btn-sm rounded-pill"
+                                           onclick="return confirm('Are you sure you want to delete this comment?');">
+
+                                            <i class="bi bi-trash"></i>
+                                            Delete
+
+                                        </a>
+
+                                    </td>
+
+                                </tr>
+                            }
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+            }
+
+        </div>
+
+    </div>
+
+</div>
+

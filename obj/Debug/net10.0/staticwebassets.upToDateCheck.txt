@@ -1,7 +1,6 @@
 wwwroot\css\dashboard.css
 wwwroot\css\login.css
 wwwroot\css\register.css
-wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -64,75 +63,79 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\uploads\coverImages\11b2b37e-15f6-40eb-bb09-71eaabbf1318.png
 wwwroot\uploads\coverImages\29edbbdf-9298-4765-bb96-09c0ebfd29d0.jpg
 wwwroot\uploads\coverImages\5be34ebf-a70c-4957-a9b6-064eede1fe11.png
+wwwroot\uploads\coverImages\619796cb-ab82-4219-bb1a-6453a53eba74.png
+wwwroot\uploads\coverImages\649b5966-f3e7-4e54-b53b-e9e869f4374a.png
+wwwroot\uploads\coverImages\8357b5e3-9df8-4829-ab4d-7c52f5391e2c.jpg
 wwwroot\uploads\coverImages\abbed1ac-0254-4591-994c-f80471856bc5.jpg
 wwwroot\uploads\coverImages\brain (2).png
 wwwroot\uploads\coverImages\c43e24a3-488e-47a5-8e28-6ecd7b1ade36.png
 wwwroot\uploads\coverImages\dc8e005e-364c-4693-8866-15969107079b.webp
-wwwroot\uploads\coverImages\f82750fa-0b06-4620-a3ba-aef55641f67c.png
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\LICENSE.txt
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.slim.min.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.slim.min.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.slim.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.min.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.min.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation\LICENSE.md
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation\dist\jquery.validate.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation\dist\additional-methods.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\js\site.js
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\favicon.ico
+wwwroot\css\site.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\css\dashboard.css
 D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\css\login.css
 D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\css\register.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\favicon.ico
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\js\site.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation\dist\additional-methods.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery-validation\LICENSE.md
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.min.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.min.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.slim.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.slim.min.js
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\dist\jquery.slim.min.map
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\lib\jquery\LICENSE.txt
 D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\css\site.css
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\wwwroot\css\dashboard.css

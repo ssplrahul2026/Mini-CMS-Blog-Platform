@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniCMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63800a86edb81843e6be50bb9a956a040aee9fac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d67b6d0d06231763dc89202f666d47228c00bfa0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniCMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniCMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

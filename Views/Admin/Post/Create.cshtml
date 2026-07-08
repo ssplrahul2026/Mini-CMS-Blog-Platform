@@ -1,161 +1,291 @@
-﻿@model MiniCMS.Models.ViewModels.PostViewModel
+﻿
+@model MiniCMS.Models.ViewModels.PostViewModel
 
 @{
     ViewData["Title"] = "Create Post";
 }
 
-<div class="container mt-4">
+<div class="container-fluid py-4" style="background:#f4f7fc; min-height:100vh;">
 
-    <h2 class="mb-4">Create Post</h2>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+
+            <a asp-action="Index"
+               class="btn btn-outline-dark rounded-pill px-4 mb-3">
+
+                <i class="bi bi-arrow-left"></i>
+                Back to Posts
+
+            </a>
+
+            <h2 class="fw-bold text-primary mb-1">
+                Create New Post
+            </h2>
+
+            <p class="text-muted">
+                Fill in the details below to publish a new blog post.
+            </p>
+
+        </div>
+
+    </div>
 
     <form asp-action="Create"
           method="post"
           enctype="multipart/form-data">
 
         <div asp-validation-summary="ModelOnly"
-             class="text-danger mb-3">
-        </div>
-
-        
-        <div class="mb-3">
-            <label asp-for="Title" class="form-label"></label>
-
-            <input asp-for="Title"
-                   class="form-control"
-                   placeholder="Enter post title" />
-
-            <span asp-validation-for="Title"
-                  class="text-danger"></span>
-        </div>
-
-       
-        <div class="mb-3">
-            <label asp-for="Slug" class="form-label"></label>
-
-            <input asp-for="Slug"
-                   class="form-control"
-                   placeholder="Enter post slug" />
-
-            <span asp-validation-for="Slug"
-                  class="text-danger"></span>
-        </div>
-
-       
-        <div class="mb-4">
-            <label asp-for="Body" class="form-label"></label>
-
-            <textarea asp-for="Body"
-                      rows="8"
-                      class="form-control"
-                      placeholder="Write your post here..."></textarea>
-
-            <span asp-validation-for="Body"
-                  class="text-danger"></span>
+             class="alert alert-danger">
         </div>
 
         <div class="row">
 
-           
-            <div class="col-md-6 mb-4">
+            @* left side *@
 
-                <label asp-for="CategoryId" class="form-label">
-                    Category
-                </label>
+            <div class="col-lg-8">
 
-                <select asp-for="CategoryId"
-                        asp-items="Model.Categories"
-                        class="form-select">
+                <div class="card border-0 shadow rounded-4 mb-4">
 
-                    <option value="">-- Select Category --</option>
+                    <div class="card-header bg-primary text-white rounded-top-4">
 
-                </select>
+                        <h5 class="mb-0">
+                            <i class="bi bi-file-earmark-text"></i>
+                            Post Content
+                        </h5>
 
-                <span asp-validation-for="CategoryId"
-                      class="text-danger"></span>
+                    </div>
+
+                    <div class="card-body p-4">
+
+                         @* Title *@
+
+                        <div class="mb-4">
+
+                            <label asp-for="Title"
+                                   class="form-label fw-semibold">
+                            </label>
+
+                            <input asp-for="Title"
+                                   class="form-control form-control-lg rounded-3"
+                                   placeholder="Enter post title" />
+
+                            <span asp-validation-for="Title"
+                                  class="text-danger"></span>
+
+                        </div>
+
+                        @* Slug *@
+
+                        <div class="mb-4">
+
+                            <label asp-for="Slug"
+                                   class="form-label fw-semibold">
+                            </label>
+
+                            <input asp-for="Slug"
+                                   class="form-control rounded-3"
+                                   placeholder="example-post-title" />
+
+                            <span asp-validation-for="Slug"
+                                  class="text-danger"></span>
+
+                        </div>
+
+                         @* Body  *@
+
+                        <div>
+
+                            <label asp-for="Body"
+                                   class="form-label fw-semibold">
+                            </label>
+
+                            <textarea asp-for="Body"
+                                      rows="15"
+                                      class="form-control rounded-3"
+                                      placeholder="Write your post here..."></textarea>
+
+                            <span asp-validation-for="Body"
+                                  class="text-danger"></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            
-            <div class="col-md-6 mb-4">
+             @* Right Side *@
 
-                <label asp-for="CoverImage"
-                       class="form-label">
-                </label>
+            <div class="col-lg-4">
 
-                <input asp-for="CoverImage"
-                       type="file"
-                       class="form-control" />
+                @* Publish  *@
 
-            </div>
+                <div class="card border-0 shadow rounded-4 mb-4">
 
-        </div>
+                    <div class="card-header bg-primary text-white rounded-top-4">
 
-        
-        <div class="mb-4">
+                        <h5 class="mb-0">
 
-            <label class="form-label">
-                Tags
-            </label>
+                            <i class="bi bi-upload"></i>
+                            Publish
 
-            <div class="row">
+                        </h5>
 
-                @foreach (var tag in Model.Tags)
-                {
-                    <div class="col-md-3 mb-2">
+                    </div>
 
-                        <div class="form-check">
+                    <div class="card-body">
 
-                            <input class="form-check-input"
-                                   type="checkbox"
-                                   name="SelectedTags"
-                                   value="@tag.Value"
-                                   id="tag_@tag.Value" />
+                        <div class="form-check form-switch">
 
-                            <label class="form-check-label"
-                                   for="tag_@tag.Value">
+                            <input asp-for="IsPublished"
+                                   class="form-check-input" />
 
-                                @tag.Text
+                            <label asp-for="IsPublished"
+                                   class="form-check-label ms-2">
+
+                                Publish Immediately
 
                             </label>
 
                         </div>
 
                     </div>
-                }
+
+                </div>
+
+                 @* Category  *@
+
+                <div class="card border-0 shadow rounded-4 mb-4">
+
+                    <div class="card-header bg-primary text-white rounded-top-4">
+
+                        <h5 class="mb-0">
+
+                            <i class="bi bi-folder"></i>
+                            Category
+
+                        </h5>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <select asp-for="CategoryId"
+                                asp-items="Model.Categories"
+                                class="form-select rounded-3">
+
+                            <option value="">
+                                Select Category
+                            </option>
+
+                        </select>
+
+                        <span asp-validation-for="CategoryId"
+                              class="text-danger"></span>
+
+                    </div>
+
+                </div>
+
+               @* Cover Image  *@
+
+                <div class="card border-0 shadow rounded-4 mb-4">
+
+                    <div class="card-header bg-primary text-white rounded-top-4">
+
+                        <h5 class="mb-0">
+
+                            <i class="bi bi-image"></i>
+                            Cover Image
+
+                        </h5>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <input asp-for="CoverImage"
+                               type="file"
+                               class="form-control rounded-3" />
+
+                    </div>
+
+                </div>
+
+                 @* Tags  *@
+
+                <div class="card border-0 shadow rounded-4">
+
+                    <div class="card-header bg-primary text-white rounded-top-4">
+
+                        <h5 class="mb-0">
+
+                            <i class="bi bi-tags"></i>
+                            Tags
+
+                        </h5>
+
+                    </div>
+
+                    <div class="card-body"
+                         style="max-height:250px;overflow-y:auto;">
+
+                        @foreach (var tag in Model.Tags)
+                        {
+                            <div class="form-check border rounded-3 p-2 mb-2 bg-light">
+
+                                <input class="form-check-input"
+                                       type="checkbox"
+                                       name="SelectedTags"
+                                       value="@tag.Value"
+                                       id="tag_@tag.Value">
+
+                                <label class="form-check-label ms-2"
+                                       for="tag_@tag.Value">
+
+                                    @tag.Text
+
+                                </label>
+
+                            </div>
+                        }
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
-       
-        <div class="form-check mb-4">
+         @* Bottom Buttons  *@
 
-            <input asp-for="IsPublished"
-                   class="form-check-input" />
+        <div class="card border-0 shadow rounded-4 mt-4">
 
-            <label asp-for="IsPublished"
-                   class="form-check-label">
-                Publish Post
-            </label>
+            <div class="card-body">
 
-        </div>
+                <div class="d-flex justify-content-end gap-3">
 
-        
-        <div class="mt-4">
+                    <a asp-action="Index"
+                       class="btn btn-outline-secondary rounded-pill px-5">
 
-            <button type="submit"
-                    class="btn btn-success">
+                        Cancel
 
-                Save
+                    </a>
 
-            </button>
+                    <button type="submit"
+                            class="btn btn-success rounded-pill px-5">
 
-            <a asp-action="Index"
-               class="btn btn-secondary">
+                        <i class="bi bi-check-circle"></i>
+                        Save Post
 
-                Cancel
+                    </button>
 
-            </a>
+                </div>
+
+            </div>
 
         </div>
 

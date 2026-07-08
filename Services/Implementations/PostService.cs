@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using MiniCMS.Data;
 using MiniCMS.Models.Entities;
 using MiniCMS.Models.ViewModels;
@@ -197,5 +198,31 @@ namespace MiniCMS.Services.Implementations
 
             await _postRepository.SaveAsync();
         }
+
+
+        public async Task<List<Post>> SearchAsync(string searchTerm)
+        {
+            return await _postRepository.SearchAsync(searchTerm);
+        }
+
+
+        //public async Task<List<Post>> GetFilteredPostsAsync(
+        //string? searchTerm,
+        //int? categoryId,
+        //int? tagId)
+        //{
+        //    return await _postRepository.GetFilteredPostsAsync(
+        //        searchTerm,
+        //        categoryId,
+        //        tagId);
+        //}
+
+
+        public async Task<List<Post>> GetFilteredPostsAsync(string? searchTerm,int? categoryId,int? tagId,string? sortBy)
+        {
+            return await _postRepository.GetFilteredPostsAsync(searchTerm,categoryId,tagId,sortBy);
+        }
+
+
     }
 }

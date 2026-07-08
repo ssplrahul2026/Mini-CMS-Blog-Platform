@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using MiniCMS.Models.Entities;
 using MiniCMS.Models.ViewModels;
 using MiniCMS.Services.Interfaces;
 
@@ -14,22 +15,39 @@ namespace MiniCMS.Controllers
         private readonly ITagService _tagService;
 
 
-
+       
         public PostController(IPostService postService, ICategoryService categoryService, ITagService tagService)
         {
             _postService = postService;
             _categoryService = categoryService;
             _tagService = tagService;
         }
-        public async Task<IActionResult> Index()
+
+
+        public async Task<IActionResult> Index(
+    string? searchTerm,
+    int? categoryId,
+    int? tagId,
+    string? sortBy)
         {
-            var posts = await _postService.GetAllPostsAsync();
+            var posts = await _postService.GetFilteredPostsAsync(
+                searchTerm,
+                categoryId,
+                tagId,
+                sortBy);
+
+            ViewBag.SearchTerm = searchTerm;
+            ViewBag.CategoryId = categoryId;
+            ViewBag.TagId = tagId;
+            ViewBag.SortBy = sortBy;
+
+            ViewBag.Categories = await _categoryService.GetAllAsync();
+            ViewBag.Tags = await _tagService.GetAllAsync();
 
             return View("~/Views/Admin/Post/Index.cshtml", posts);
         }
 
 
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create()
         {
             var model = new PostViewModel();
@@ -55,7 +73,7 @@ namespace MiniCMS.Controllers
 
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+      
         public async Task<IActionResult> Create(PostViewModel model)
         {
             if (!ModelState.IsValid)
@@ -104,9 +122,7 @@ namespace MiniCMS.Controllers
                 CategoryId = post.CategoryId,
                 IsPublished = post.IsPublished,
                 ExistingImagePath = post.CoverImagePath,
-                SelectedTags = post.PostTags
-                                    .Select(x => x.TagId)
-                                    .ToList()
+                SelectedTags = post.PostTags.Select(x => x.TagId).ToList()
             };
 
             var categories = await _categoryService.GetAllAsync();

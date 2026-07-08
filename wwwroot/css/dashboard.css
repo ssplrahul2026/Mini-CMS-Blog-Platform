@@ -40,3 +40,55 @@
 .btn {
     border-radius: 8px;
 }
+
+
+body {
+    background: #f4f7fc;
+}
+
+.dashboard-header h2 {
+    font-weight: 700;
+}
+
+.stat-card {
+    border: none;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+    .stat-card:hover {
+        transform: translateY(-6px);
+    }
+
+.stat-icon {
+    font-size: 50px;
+    opacity: .25;
+}
+
+.dashboard-card {
+    border: none;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+    .dashboard-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0,0,0,.15) !important;
+    }
+
+.dashboard-icon {
+    font-size: 60px;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.display-5 {
+    font-weight: 700;
+}
