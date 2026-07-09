@@ -182,9 +182,6 @@ namespace MiniCMS.Services.Implementations
 
 
 
-
-
-
         public async Task DeletePostAsync(int id)
         {
             var post = await _postRepository.GetByIdAsync(id);
@@ -206,21 +203,56 @@ namespace MiniCMS.Services.Implementations
         }
 
 
-        //public async Task<List<Post>> GetFilteredPostsAsync(
-        //string? searchTerm,
-        //int? categoryId,
-        //int? tagId)
-        //{
-        //    return await _postRepository.GetFilteredPostsAsync(
-        //        searchTerm,
-        //        categoryId,
-        //        tagId);
-        //}
 
 
-        public async Task<List<Post>> GetFilteredPostsAsync(string? searchTerm,int? categoryId,int? tagId,string? sortBy)
+        public async Task<(List<Post> Posts, int TotalPosts)> GetFilteredPostsAsync(string? searchTerm,int? categoryId,int? tagId,string? sortBy,int page,int pageSize)
         {
-            return await _postRepository.GetFilteredPostsAsync(searchTerm,categoryId,tagId,sortBy);
+            return await _postRepository.GetFilteredPostsAsync(searchTerm,categoryId,tagId,sortBy,page,pageSize);
+        }
+
+
+
+        //public
+
+
+        public async Task<List<Post>> GetPublishedPostsAsync()
+        {
+            return await _postRepository.GetPublishedPostsAsync();
+        }
+
+
+        public async Task<Post?> GetPublishedPostDetailsAsync(int id)
+        {
+            return await _postRepository.GetPostDetailsByIdAsync(id);
+        }
+        public async Task<(List<Post> Posts, int TotalPosts)> GetPublishedPostsAsync(string? searchTerm,int? categoryId,int? tagId,string? sortBy,int page,int pageSize)
+        {
+            return await _postRepository.GetPublishedPostsAsync(
+                searchTerm,
+                categoryId,
+                tagId,
+                sortBy,
+                page,
+                pageSize);
+        }
+
+
+
+        public async Task<List<Post>> GetDeletedPostsAsync()
+        {
+            return await _postRepository.GetDeletedPostsAsync();
+        }
+
+        public async Task RestoreAsync(int id)
+        {
+            await _postRepository.RestoreAsync(id);
+        }
+
+
+
+        public async Task<Post?> GetPublishedPostBySlugAsync(string slug)
+        {
+            return await _postRepository.GetPublishedPostBySlugAsync(slug);
         }
 
 

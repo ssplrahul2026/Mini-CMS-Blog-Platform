@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MiniCMS.Models.Entities;
 using MiniCMS.Models.Identity;
+using MiniCMS.Models.ViewModels;
 
 namespace MiniCMS.Data
 {
@@ -25,25 +26,36 @@ namespace MiniCMS.Data
 
         public DbSet<PostTag> PostTags { get; set; }
 
+        
+
+       public DbSet<MostCommentedPostVM> MostCommentedPosts { get; set; }
+
+
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            //  composite key
+            // Composite Key
             modelBuilder.Entity<PostTag>()
                 .HasKey(pt => new { pt.PostId, pt.TagId });
 
-            // Post= PostTag
+            // Post = PostTag
             modelBuilder.Entity<PostTag>()
                 .HasOne(pt => pt.Post)
                 .WithMany(p => p.PostTags)
                 .HasForeignKey(pt => pt.PostId);
 
-            // Tag= PostTag
+            // Tag = PostTag
             modelBuilder.Entity<PostTag>()
                 .HasOne(pt => pt.Tag)
                 .WithMany(t => t.PostTags)
                 .HasForeignKey(pt => pt.TagId);
+
+            // Raw SQL ViewModel
+            modelBuilder.Entity<MostCommentedPostVM>()
+                .HasNoKey();
         }
     }
 }

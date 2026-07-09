@@ -19,5 +19,15 @@ namespace MiniCMS.Controllers
             var model = await _dashboardService.GetDashboardDataAsync();
             return View(model);
         }
+
+
+        public async Task<IActionResult> MostCommentedPosts()
+        {
+            var posts = await _dashboardService.GetMostCommentedPostsAsync();
+
+            return View(posts);
+        }
+
+
     }
 }

@@ -291,5 +291,5 @@ D:\GIT GITHUB\Mini-CMS-Blog-Platform\obj\Debug\net10.0\compressed\v0zgfp0y55-{0}
 D:\GIT GITHUB\Mini-CMS-Blog-Platform\obj\Debug\net10.0\compressed\yfc7ypekbg-{0}-mlv21k5csn-mlv21k5csn.gz
 D:\GIT GITHUB\Mini-CMS-Blog-Platform\obj\Debug\net10.0\compressed\s64yzogcdy-{0}-kd7ii6zr9c-kd7ii6zr9c.gz
 D:\GIT GITHUB\Mini-CMS-Blog-Platform\obj\Debug\net10.0\compressed\joqrvx2e6t-{0}-906qlschtl-906qlschtl.gz
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\obj\Debug\net10.0\compressed\gefnntbkac-{0}-hlnq1tyeag-hlnq1tyeag.gz
-D:\GIT GITHUB\Mini-CMS-Blog-Platform\obj\Debug\net10.0\compressed\qsdp7owaho-{0}-umcomhvwmy-umcomhvwmy.gz
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\obj\Debug\net10.0\compressed\qsdp7owaho-{0}-z991ixg8gs-z991ixg8gs.gz
+D:\GIT GITHUB\Mini-CMS-Blog-Platform\obj\Debug\net10.0\compressed\gefnntbkac-{0}-lgtpxku610-lgtpxku610.gz

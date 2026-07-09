@@ -24,18 +24,13 @@ namespace MiniCMS.Controllers
         }
 
 
-        public async Task<IActionResult> Index(
-    string? searchTerm,
-    int? categoryId,
-    int? tagId,
-    string? sortBy)
+        public async Task<IActionResult> Index(string? searchTerm,int? categoryId,int? tagId,string? sortBy,int page = 1)
         {
-            var posts = await _postService.GetFilteredPostsAsync(
-                searchTerm,
-                categoryId,
-                tagId,
-                sortBy);
+            const int pageSize = 7;
+          
+            var result = await _postService.GetFilteredPostsAsync(searchTerm,categoryId,tagId,sortBy,page,pageSize);
 
+            // Data
             ViewBag.SearchTerm = searchTerm;
             ViewBag.CategoryId = categoryId;
             ViewBag.TagId = tagId;
@@ -44,8 +39,18 @@ namespace MiniCMS.Controllers
             ViewBag.Categories = await _categoryService.GetAllAsync();
             ViewBag.Tags = await _tagService.GetAllAsync();
 
-            return View("~/Views/Admin/Post/Index.cshtml", posts);
+            // Pagination
+            ViewBag.CurrentPage = page;
+            ViewBag.PageSize = pageSize;
+            ViewBag.TotalPosts = result.TotalPosts;
+            ViewBag.TotalPages = (int)Math.Ceiling(result.TotalPosts / (double)pageSize);
+          
+            return View("~/Views/Admin/Post/Index.cshtml", result.Posts);
         }
+
+
+
+
 
 
         public async Task<IActionResult> Create()
@@ -70,6 +75,10 @@ namespace MiniCMS.Controllers
 
             return View("~/Views/Admin/Post/Create.cshtml", model);
         }
+
+
+
+
 
 
         [HttpPost]
@@ -101,6 +110,9 @@ namespace MiniCMS.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+
+
 
 
 
@@ -146,6 +158,9 @@ namespace MiniCMS.Controllers
         }
 
 
+
+
+
         [HttpPost]
      
         public async Task<IActionResult> Edit(PostViewModel model)
@@ -173,8 +188,10 @@ namespace MiniCMS.Controllers
 
             await _postService.UpdatePostAsync(model);
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
+
+
 
 
 
@@ -184,9 +201,24 @@ namespace MiniCMS.Controllers
         {
             await _postService.DeletePostAsync(id);
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
 
+        public async Task<IActionResult> DeletedPosts()
+        {
+            var posts = await _postService.GetDeletedPostsAsync();
 
+            return View("~/Views/Admin/Post/DeletedPosts.cshtml", posts);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Restore(int id)
+        {
+            await _postService.RestoreAsync(id);
+
+            TempData["Success"] = "Post restored successfully.";
+
+            return RedirectToAction(nameof(DeletedPosts));
+        }
     }
 }

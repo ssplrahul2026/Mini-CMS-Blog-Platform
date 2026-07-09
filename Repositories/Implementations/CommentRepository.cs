@@ -35,7 +35,7 @@ namespace MiniCMS.Repositories.Implementations
 
             if (comment != null)
             {
-                comment.Approved = true;
+                comment.IsApproved = true;
                 await _context.SaveChangesAsync();
             }
         }
@@ -50,5 +50,26 @@ namespace MiniCMS.Repositories.Implementations
                 await _context.SaveChangesAsync();
             }
         }
+
+
+
+        public async Task<List<Comment>> GetApprovedCommentsAsync(int postId)
+        {
+            return await _context.Comments
+                .Where(c =>
+                    c.PostId == postId &&
+                    c.IsApproved &&
+                    !c.IsDeleted)
+                .OrderByDescending(c => c.CreatedDate)
+                .ToListAsync();
+        }
+
+        public async Task AddCommentAsync(Comment comment)
+        {
+            await _context.Comments.AddAsync(comment);
+            await _context.SaveChangesAsync();
+        }
+
+    
     }
 }

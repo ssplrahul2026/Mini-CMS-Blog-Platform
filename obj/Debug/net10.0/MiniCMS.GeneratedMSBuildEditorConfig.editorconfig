@@ -63,6 +63,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUG9zdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/GIT GITHUB/Mini-CMS-Blog-Platform/Views/Admin/Post/DeletedPosts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUG9zdFxEZWxldGVkUG9zdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/GIT GITHUB/Mini-CMS-Blog-Platform/Views/Admin/Post/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUG9zdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -91,12 +95,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GIT GITHUB/Mini-CMS-Blog-Platform/Views/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/GIT GITHUB/Mini-CMS-Blog-Platform/Views/Public/Category.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljXENhdGVnb3J5LmNzaHRtbA==
+[D:/GIT GITHUB/Mini-CMS-Blog-Platform/Views/Dashboard/MostCommentedPosts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXE1vc3RDb21tZW50ZWRQb3N0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/GIT GITHUB/Mini-CMS-Blog-Platform/Views/Public/Details.cshtml]
@@ -105,10 +105,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/GIT GITHUB/Mini-CMS-Blog-Platform/Views/Public/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/GIT GITHUB/Mini-CMS-Blog-Platform/Views/Public/Tag.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljXFRhZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/GIT GITHUB/Mini-CMS-Blog-Platform/Views/Shared/Error.cshtml]

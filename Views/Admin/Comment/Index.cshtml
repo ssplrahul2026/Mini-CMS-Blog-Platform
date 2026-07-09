@@ -141,7 +141,7 @@
 
                                     <td>
 
-                                        @if (item.Approved)
+                                        @if (item.IsApproved)
                                         {
                                             <span class="badge bg-success rounded-pill px-3">
 
@@ -164,7 +164,7 @@
 
                                     <td class="text-center">
 
-                                        @if (!item.Approved)
+                                        @if (!item.IsApproved)
                                         {
                                             <a asp-action="Approve"
                                                asp-route-id="@item.CommentId"

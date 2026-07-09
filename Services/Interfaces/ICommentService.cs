@@ -11,5 +11,10 @@ namespace MiniCMS.Services.Interfaces
         Task ApproveAsync(int id);
 
         Task DeleteAsync(int id);
+
+        Task<List<Comment>> GetApprovedCommentsAsync(int postId);
+
+        Task AddCommentAsync(Comment comment);
+
     }
 }

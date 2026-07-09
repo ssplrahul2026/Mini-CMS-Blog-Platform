@@ -1,1 +1,458 @@
-﻿
+﻿@model IEnumerable<MiniCMS.Models.Entities.Post>
+
+@{
+    ViewData["Title"] = "Published Posts";
+}
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #f5f5f5;
+    }
+
+    .container {
+        width: 95%;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    
+
+    .heading {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .heading h1 {
+        font-size: 34px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .heading p {
+        color: gray;
+    }
+
+   
+
+    .filter-box {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        margin-bottom: 35px;
+    }
+
+    .filter-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: end;
+    }
+
+    .filter-item {
+        flex: 1;
+        min-width: 180px;
+    }
+
+    .filter-item label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    .filter-item input,
+    .filter-item select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .btn-search {
+        background: #0d6efd;
+        color: white;
+    }
+
+    .btn-reset {
+        background: gray;
+        color: white;
+    }
+
+    
+
+    .post-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: flex-start; 
+        align-items: stretch;
+        width:100%;
+    }
+
+    .post-card {
+        width: 330px;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #ddd;
+        transition: .3s;
+        margin:40px;
+    }
+
+    .post-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .post-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .post-content {
+        padding: 18px;
+    }
+
+    .category {
+        background: #0d6efd;
+        color: white;
+        display: inline-block;
+        padding: 5px 12px;
+        border-radius: 4px;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .post-title {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #222;
+    }
+
+    .post-date {
+        color: gray;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .post-body {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .read-btn {
+        background: crimson;
+        color: white;
+        text-decoration: none;
+        padding: 10px 18px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+    .read-btn:hover {
+        background: darkred;
+    }
+
+   
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin-top: 40px;
+        gap: 8px;
+    }
+
+    .pagination li a {
+        text-decoration: none;
+        padding: 10px 15px;
+        border: 1px solid #ccc;
+        color: black;
+        background: white;
+    }
+
+    .pagination li.active a {
+        background: #0d6efd;
+        color: white;
+    }
+
+    .pagination li.disabled a {
+        pointer-events: none;
+        background: #eee;
+        color: gray;
+    }
+
+    .hero {
+        background: #0d6efd;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }   
+</style>
+
+<div class="container">
+
+    <div class="hero">
+
+        <h1>Mini CMS Blog</h1>
+
+        <p>
+            Read the latest articles, tutorials and updates.
+        </p>
+
+    </div>
+
+    
+
+    <form asp-action="Index" method="get">
+
+        <div class="filter-box">
+
+            <div class="filter-row">
+
+                <div class="filter-item">
+
+                    <label>Search</label>
+
+                    <input type="text"
+                           name="searchTerm"
+                           value="@ViewBag.SearchTerm"
+                           placeholder="Search posts..." />
+
+                </div>
+
+                <div class="filter-item">
+
+                    <label>Category</label>
+
+                    <select name="categoryId">
+
+                        <option value="">All Categories</option>
+
+                        @foreach (var category in ViewBag.Categories)
+                        {
+                            <option value="@category.CategoryId"
+                                    selected="@(ViewBag.CategoryId?.ToString()==category.CategoryId.ToString())">
+                                @category.Name
+                            </option>
+                        }
+
+                    </select>
+
+                </div>
+
+                <div class="filter-item">
+
+                    <label>Tag</label>
+
+                    <select name="tagId">
+
+                        <option value="">All Tags</option>
+
+                        @foreach (var tag in ViewBag.Tags)
+                        {
+                            <option value="@tag.TagId"
+                                    selected="@(ViewBag.TagId?.ToString()==tag.TagId.ToString())">
+                                @tag.Name
+                            </option>
+                        }
+
+                    </select>
+
+                </div>
+
+                <div class="filter-item">
+
+                    <label>Sort</label>
+
+                    <select name="sortBy">
+
+                        <option value="">Newest</option>
+
+                        <option value="oldest"
+                                selected="@(ViewBag.SortBy=="oldest")">
+                            Oldest
+                        </option>
+
+                        <option value="title"
+                                selected="@(ViewBag.SortBy=="title")">
+                            Title A-Z
+                        </option>
+
+                        <option value="title_desc"
+                                selected="@(ViewBag.SortBy=="title_desc")">
+                            Title Z-A
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="filter-item">
+
+                    <button class="btn btn-search" type="submit">
+                        Search
+                    </button>
+
+                </div>
+
+                <div class="filter-item">
+
+                    <a asp-action="Index" class="btn btn-reset">
+                        Reset
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </form>
+
+    
+
+    <div class="post-container">
+
+        @foreach (var post in Model)
+        {
+
+            <div class="post-card">
+
+                @if (!string.IsNullOrEmpty(post.CoverImagePath))
+                {
+                    <img src="@post.CoverImagePath" />
+                }
+                else
+                {
+                    <img src="~/images/no-image.png" />
+                }
+
+                <div class="post-content">
+
+                    <span class="category">
+                        @post.Category?.Name
+                    </span>
+
+                    <h2 class="post-title">
+                        @post.Title
+                    </h2>
+
+                    <div class="post-date">
+                        @post.PublishedDate?.ToString("dd MMM yyyy")
+                    </div>
+
+                    <p class="post-body">
+
+                        @(post.Body.Length > 120
+                            ? post.Body.Substring(0,120) + "..."
+                            : post.Body)
+
+                    </p>
+
+                    <a asp-action="Details"
+                       asp-route-slug="@post.Slug"
+                       class="btn btn-primary">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+        }
+
+    </div>
+
+  
+
+    @if (ViewBag.TotalPages > 1)
+    {
+
+        <ul class="pagination">
+
+            <li class="@(ViewBag.CurrentPage==1?"disabled":"")">
+
+                <a asp-action="Index"
+                   asp-route-page="@(ViewBag.CurrentPage-1)"
+                   asp-route-searchTerm="@ViewBag.SearchTerm"
+                   asp-route-categoryId="@ViewBag.CategoryId"
+                   asp-route-tagId="@ViewBag.TagId"
+                   asp-route-sortBy="@ViewBag.SortBy">
+
+                    Previous
+
+                </a>
+
+            </li>
+
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+
+                <li class="@(i==ViewBag.CurrentPage?"active":"")">
+
+                    <a asp-action="Index"
+                       asp-route-page="@i"
+                       asp-route-searchTerm="@ViewBag.SearchTerm"
+                       asp-route-categoryId="@ViewBag.CategoryId"
+                       asp-route-tagId="@ViewBag.TagId"
+                       asp-route-sortBy="@ViewBag.SortBy">
+
+                        @i
+
+                    </a>
+
+                </li>
+
+            }
+
+            <li class="@(ViewBag.CurrentPage==ViewBag.TotalPages?"disabled":"")">
+
+                <a asp-action="Index"
+                   asp-route-page="@(ViewBag.CurrentPage+1)"
+                   asp-route-searchTerm="@ViewBag.SearchTerm"
+                   asp-route-categoryId="@ViewBag.CategoryId"
+                   asp-route-tagId="@ViewBag.TagId"
+                   asp-route-sortBy="@ViewBag.SortBy">
+
+                    Next
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    }
+
+</div>

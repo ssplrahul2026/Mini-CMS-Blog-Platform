@@ -10,7 +10,8 @@ namespace MiniCMS.Models.Entities
 
         public string Body { get; set; } = string.Empty;
 
-        public bool Approved { get; set; } = false;
+        public bool IsApproved { get; set; } = false;
+        public bool IsDeleted { get; set; } = false;
 
         public DateTime CreatedDate { get; set; } = DateTime.Now;
 

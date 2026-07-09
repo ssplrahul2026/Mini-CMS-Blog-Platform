@@ -3,112 +3,233 @@
 @{
     ViewData["Title"] = "Edit Post";
 }
+<style>
 
-<div class="container-fluid py-4" style="background:#f4f7fc; min-height:100vh;">
+    body {
+        background: #eef2f7;
+        font-family: Segoe UI,Arial,sans-serif;
+    }
 
-   
-    <div class="d-flex justify-content-between align-items-center mb-4">
+    .edit-container {
+        max-width: 1000px;
+        margin: 35px auto;
+        padding: 0 15px;
+    }
 
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+        .page-header h2 {
+            margin: 0;
+            font-size: 28px;
+            color: #2c3e50;
+        }
+
+        .page-header p {
+            margin-top: 5px;
+            color: #777;
+        }
+
+    .btn-back {
+        background: #ffffff;
+        border: 1px solid #dcdcdc;
+        color: #333;
+        padding: 10px 18px;
+        text-decoration: none;
+        border-radius: 6px;
+    }
+
+        .btn-back:hover {
+            background: #f3f3f3;
+        }
+
+    .form-box {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .form-group {
+        margin-bottom: 22px;
+    }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #444;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ced4da;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .row-box {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+
+    .publish-box {
+        height: 45px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .image-box {
+        border: 1px solid #ddd;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 6px;
+        background: #fafafa;
+    }
+
+        .image-box img {
+            width: 220px;
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+    .button-group {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .btn-save {
+        background: #2563eb;
+        color: #fff;
+        border: none;
+        padding: 11px 24px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+        .btn-save:hover {
+            background: #1d4ed8;
+        }
+
+    .btn-cancel {
+        background: #6c757d;
+        color: #fff;
+        padding: 11px 24px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+
+        .btn-cancel:hover {
+            background: #5a6268;
+        }
+
+    .validation-summary {
+        color: red;
+        margin-bottom: 20px;
+    }
+
+    .text-danger {
+        color: red;
+        font-size: 14px;
+    }
+
+    @@media (max-width:768px) {
+
+        .row-box {
+            grid-template-columns: 1fr;
+        }
+
+        .page-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .button-group {
+            justify-content: flex-start;
+        }
+    }
+
+</style>
+<div class="edit-container">
+
+    <div class="page-header">
         <div>
-
-            <a asp-action="Index"
-               class="btn btn-outline-dark rounded-pill px-4 mb-3">
-
-                <i class="bi bi-arrow-left"></i>
-                Back to Posts
-
-            </a>
-
-            <h2 class="fw-bold text-warning mb-1">
-                Edit Post
-            </h2>
-
-            <p class="text-muted">
-                Update the post information and save your changes.
-            </p>
-
+            <h2>Edit Post</h2>
+            <p>Update your blog post information.</p>
         </div>
 
+        <a asp-action="Index" class="btn-back">
+             Back
+        </a>
     </div>
 
-    <form asp-action="Edit"
-          method="post"
-          enctype="multipart/form-data">
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
 
         <input asp-for="PostId" type="hidden" />
         <input asp-for="ExistingImagePath" type="hidden" />
 
-        <div asp-validation-summary="ModelOnly"
-             class="alert alert-danger">
-        </div>
+        <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
 
-        <div class="row">
+        <div class="form-box">
 
-            @*  LEFT SIDE  *@
+            <div class="form-group">
+                <label asp-for="Title"></label>
 
-            <div class="col-lg-8">
+                <input asp-for="Title" class="form-control" />
 
-                <div class="card shadow border-0 rounded-4 mb-4">
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
 
-                    <div class="card-header bg-warning text-dark rounded-top-4">
+            <div class="form-group">
+                <label asp-for="Slug"></label>
 
-                        <h5 class="mb-0">
-                            <i class="bi bi-file-earmark-text"></i>
-                            Post Content
-                        </h5>
+                <input asp-for="Slug" class="form-control" />
 
-                    </div>
+                <span asp-validation-for="Slug" class="text-danger"></span>
+            </div>
 
-                    <div class="card-body">
+            <div class="row-box">
 
-                        @*  Title  *@
+                <div class="form-group">
+                    <label asp-for="CategoryId">Category</label>
 
-                        <div class="mb-4">
+                    <select asp-for="CategoryId"
+                            asp-items="Model.Categories"
+                            class="form-control">
 
-                            <label asp-for="Title"
-                                   class="form-label fw-semibold"></label>
+                        <option value="">Select Category</option>
 
-                            <input asp-for="Title"
-                                   class="form-control form-control-lg"
-                                   placeholder="Enter post title" />
+                    </select>
 
-                            <span asp-validation-for="Title"
-                                  class="text-danger"></span>
+                    <span asp-validation-for="CategoryId" class="text-danger"></span>
 
-                        </div>
+                </div>
 
-                        @* <Slug  *@
+                <div class="form-group">
 
-                        <div class="mb-4">
+                    <label>Publish</label>
 
-                            <label asp-for="Slug"
-                                   class="form-label fw-semibold"></label>
+                    <div class="publish-box">
 
-                            <input asp-for="Slug"
-                                   class="form-control"
-                                   placeholder="Enter post slug" />
+                        <input asp-for="IsPublished" />
 
-                            <span asp-validation-for="Slug"
-                                  class="text-danger"></span>
-
-                        </div>
-
-                        @* Body  *@
-
-                        <div>
-
-                            <label asp-for="Body"
-                                   class="form-label fw-semibold"></label>
-
-                            <textarea asp-for="Body"
-                                      rows="15"
-                                      class="form-control"
-                                      placeholder="Write your content here..."></textarea>
-
-                            <span asp-validation-for="Body"
-                                  class="text-danger"></span>
-
-                        </div>
+                        <label asp-for="IsPublished">
+                            Published
+                        </label>
 
                     </div>
 
@@ -116,189 +237,75 @@
 
             </div>
 
-            @* RIGHT SIDE  *@
-
-            <div class="col-lg-4">
-
-                @* Publish  *@
-
-                <div class="card shadow border-0 rounded-4 mb-4">
-
-                    <div class="card-header bg-warning text-dark rounded-top-4">
-
-                        <h5 class="mb-0">
-
-                            <i class="bi bi-upload"></i>
-                            Publish
-
-                        </h5>
-
-                    </div>
-
-                    <div class="card-body">
-
-                        <div class="form-check form-switch">
-
-                            <input asp-for="IsPublished"
-                                   class="form-check-input" />
-
-                            <label asp-for="IsPublished"
-                                   class="form-check-label ms-2">
-
-                                Published
-
-                            </label>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                @*  Category  *@
-
-                <div class="card shadow border-0 rounded-4 mb-4">
-
-                    <div class="card-header bg-warning text-dark rounded-top-4">
-
-                        <h5 class="mb-0">
-
-                            <i class="bi bi-folder"></i>
-                            Category
-
-                        </h5>
-
-                    </div>
-
-                    <div class="card-body">
-
-                        <select asp-for="CategoryId"
-                                asp-items="Model.Categories"
-                                class="form-select">
-
-                            <option value="">
-                                Select Category
-                            </option>
-
-                        </select>
-
-                        <span asp-validation-for="CategoryId"
-                              class="text-danger"></span>
-
-                    </div>
-
-                </div>
-
-                @*  Tags  *@
-
-                <div class="card shadow border-0 rounded-4 mb-4">
-
-                    <div class="card-header bg-warning text-dark rounded-top-4">
-
-                        <h5 class="mb-0">
-
-                            <i class="bi bi-tags"></i>
-                            Tags
-
-                        </h5>
-
-                    </div>
-
-                    <div class="card-body">
-
-                        <select asp-for="SelectedTags"
-                                asp-items="Model.Tags"
-                                class="form-select select2"
-                                multiple>
-                        </select>
-
-                    </div>
-
-                </div>
-
-                @*  Current Image  *@
-                @if (!string.IsNullOrEmpty(Model.ExistingImagePath))
-                {
-                    <div class="card shadow border-0 rounded-4 mb-4">
-
-                        <div class="card-header bg-warning text-dark rounded-top-4">
-
-                            <h5 class="mb-0">
-
-                                <i class="bi bi-image"></i>
-                                Current Cover Image
-
-                            </h5>
-
-                        </div>
-
-                        <div class="card-body text-center">
-
-                            <img src="@Model.ExistingImagePath"
-                                 class="img-fluid rounded shadow-sm"
-                                 style="max-height:220px;" />
-
-                        </div>
-
-                    </div>
-                }
-
-                @*  Upload  *@
-
-                <div class="card shadow border-0 rounded-4">
-
-                    <div class="card-header bg-warning text-dark rounded-top-4">
-
-                        <h5 class="mb-0">
-
-                            <i class="bi bi-cloud-upload"></i>
-                            Replace Cover Image
-
-                        </h5>
-
-                    </div>
-
-                    <div class="card-body">
-
-                        <input asp-for="CoverImage"
-                               type="file"
-                               class="form-control" />
-
-                        <span asp-validation-for="CoverImage"
-                              class="text-danger"></span>
-
-                    </div>
-
-                </div>
+            <div class="form-group">
+
+                <label>Tags</label>
+
+                <select asp-for="SelectedTags"
+                        asp-items="Model.Tags"
+                        class="form-control select2"
+                        multiple>
+                </select>
 
             </div>
 
-        </div>
+            <div class="form-group">
 
-        @*  Bottom Buttons  *@
+                <label>Replace Cover Image</label>
 
-        <div class="card shadow border-0 rounded-4 mt-4">
+                <input asp-for="CoverImage"
+                       type="file"
+                       class="form-control" />
 
-            <div class="card-body">
+                <span asp-validation-for="CoverImage"
+                      class="text-danger"></span>
 
-                <div class="d-flex justify-content-end gap-3">
+            </div>
 
-                    <a asp-action="Index"
-                       class="btn btn-outline-secondary rounded-pill px-5">
+            @if (!string.IsNullOrEmpty(Model.ExistingImagePath))
+            {
+                <div class="form-group">
 
-                        Cancel
+                    <label>Current Cover Image</label>
 
-                    </a>
+                    <div class="image-box">
 
-                    <button type="submit"
-                            class="btn btn-warning rounded-pill px-5">
+                        <img src="@Model.ExistingImagePath"
+                             alt="Cover Image" />
 
-                        <i class="bi bi-pencil-square"></i>
-                        Update Post
-
-                    </button>
+                    </div>
 
                 </div>
+            }
+
+            <div class="form-group">
+
+                <label asp-for="Body"></label>
+
+                <textarea asp-for="Body"
+                          rows="14"
+                          class="form-control"></textarea>
+
+                <span asp-validation-for="Body"
+                      class="text-danger"></span>
+
+            </div>
+
+            <div class="button-group">
+
+                <a asp-action="Index"
+                   class="btn-cancel">
+
+                    Cancel
+
+                </a>
+
+                <button type="submit"
+                        class="btn-save">
+
+                    Update Post
+
+                </button>
 
             </div>
 
@@ -308,19 +315,25 @@
 
 </div>
 
-@section Scripts
-{
+@section Scripts {
+
     <partial name="_ValidationScriptsPartial" />
 
     <script>
-        $(document).ready(function () {
+
+        $(function () {
 
             $('.select2').select2({
+
                 placeholder: "Select Tags",
-                allowClear: true,
+
                 width: "100%"
+
             });
 
         });
+
     </script>
+
 }
+

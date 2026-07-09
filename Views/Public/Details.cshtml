@@ -1,5 +1,324 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
+
+
+@model MiniCMS.Models.Entities.Post
+
 @{
+    ViewData["Title"] = Model.Title;
+    var comments = ViewBag.Comments as List<MiniCMS.Models.Entities.Comment>;
 }
+
+@if (TempData["Success"] != null)
+{
+    <div class="container mt-4">
+        <div class="alert alert-success shadow-sm">
+            @TempData["Success"]
+        </div>
+    </div>
+}
+
+<style>
+
+    body {
+        background: #f4f7fc;
+    }
+
+  
+            /* HERO */
+
+
+    .post-hero {
+        background: linear-gradient(135deg,#1e3c72,#2a5298);
+        color: white;
+        padding: 60px 0;
+        margin-bottom: 40px;
+    }
+
+    .post-title {
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .post-meta {
+        opacity: .9;
+        font-size: 15px;
+    }
+
+        .post-meta span {
+            margin-right: 20px;
+        }
+
+    .category-badge {
+        background: white;
+        color: #2a5298;
+        padding: 8px 18px;
+        border-radius: 30px;
+        font-weight: 600;
+    }
+
+            /* CONTENT CARD */
+  
+
+    .post-card {
+        background: white;
+        border-radius: 18px;
+        box-shadow: 0 8px 25px rgba(0,0,0,.08);
+        overflow: hidden;
+        margin-bottom: 40px;
+    }
+
+    .post-image {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    .post-body {
+        padding: 35px;
+        line-height: 1.9;
+        color: #555;
+        font-size: 17px;
+    }
+
+    
+            /* SECTION TITLE */
+   
+
+    .section-title {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: #1e3c72;
+    }
+
+            /* COMMENTS */
+ 
+
+    .comment-card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 6px 18px rgba(0,0,0,.08);
+        margin-bottom: 20px;
+        transition: .3s;
+    }
+
+        .comment-card:hover {
+            transform: translateY(-4px);
+        }
+
+    .comment-body {
+        padding: 25px;
+    }
+
+    .comment-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .comment-name {
+        font-weight: 700;
+        color: #1e3c72;
+    }
+
+    .comment-date {
+        color: #888;
+        font-size: 14px;
+    }
+
+   
+            /* FORM */
+   
+
+    .comment-form {
+        background: white;
+        border-radius: 18px;
+        padding: 35px;
+        box-shadow: 0 8px 20px rgba(0,0,0,.08);
+        margin-bottom: 60px;
+    }
+
+        .comment-form label {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .comment-form .form-control {
+            border-radius: 10px;
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+            .comment-form .form-control:focus {
+                box-shadow: none;
+                border-color: #2a5298;
+            }
+
+    .btn-submit {
+        background: #2a5298;
+        color: white;
+        border: none;
+        padding: 12px 35px;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: .3s;
+    }
+
+        .btn-submit:hover {
+            background: #1e3c72;
+        }
+
+
+          /*   nO COMMENT */
+
+
+    .no-comment {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        color: #777;
+        box-shadow: 0 5px 18px rgba(0,0,0,.07);
+    }
+
+</style>
+
+@* HERO  *@
+
+<section class="post-hero">
+
+    <div class="container">
+
+        <h1 class="post-title">
+            @Model.Title
+        </h1>
+
+        <div class="post-meta">
+
+            <span>
+                📅 @Model.PublishedDate?.ToString("dd MMM yyyy")
+            </span>
+
+            <span class="category-badge">
+                @Model.Category?.Name
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="container">
+
+     @* POST  *@
+
+    <div class="post-card">
+
+        @if (!string.IsNullOrEmpty(Model.CoverImagePath))
+        {
+            <img src="@Model.CoverImagePath"
+                 class="post-image" />
+        }
+
+        <div class="post-body">
+
+            @Html.Raw(Model.Body)
+
+        </div>
+
+    </div>
+
+
+    @* approved COMMENTS  *@
+
+    <h2 class="section-title">
+        Comments
+    </h2>
+
+    @if (comments != null && comments.Any())
+    {
+        foreach (var comment in comments)
+        {
+            <div class="comment-card">
+
+                <div class="comment-body">
+
+                    <div class="comment-header">
+
+                        <div class="comment-name">
+
+                            @comment.AuthorName
+
+                        </div>
+
+                        <div class="comment-date">
+
+                            @comment.CreatedDate.ToString("dd MMM yyyy")
+
+                        </div>
+
+                    </div>
+
+                    <p>
+
+                        @comment.Body
+
+                    </p>
+
+                </div>
+
+            </div>
+        }
+    }
+    else
+    {
+        <div class="no-comment">
+
+            No comments yet.
+
+        </div>
+    }
+
+    <br />
+    <br />
+
+     @* COMMENT FORM  *@
+
+    <h2 class="section-title">
+        Leave a Comment
+    </h2>
+
+    <div class="comment-form">
+
+
+
+        @if (User.Identity!.IsAuthenticated)
+        {
+            <form asp-action="AddComment" method="post">
+                <input type="hidden" name="postId" value="@Model.PostId" />
+                <input type="hidden" name="slug" value="@Model.Slug" />
+
+                <div class="mb-3">
+                    <label>Your Comment</label>
+                    <textarea name="body" class="form-control" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Submit Comment
+                </button>
+            </form>
+        }
+        else
+        {
+            <div class="alert alert-info">
+                Please <a asp-controller="Account" asp-action="Login">Login</a> to leave a comment.
+            </div>
+        }
+
+    </div>
+
+</div>

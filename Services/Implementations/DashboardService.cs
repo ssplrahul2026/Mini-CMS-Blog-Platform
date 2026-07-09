@@ -1,4 +1,5 @@
-﻿using MiniCMS.Repositories.Interfaces;
+﻿using MiniCMS.Models.ViewModels;
+using MiniCMS.Repositories.Interfaces;
 using MiniCMS.Services.Interfaces;
 using MiniCMS.ViewModels;
 
@@ -16,6 +17,12 @@ namespace MiniCMS.Services.Implementations
         public async Task<DashboardViewModel> GetDashboardDataAsync()
         {
             return await _dashboardRepository.GetDashboardDataAsync();
+        }
+
+
+        public async Task<List<MostCommentedPostVM>> GetMostCommentedPostsAsync()
+        {
+            return await _dashboardRepository.GetMostCommentedPostsAsync();
         }
     }
 }

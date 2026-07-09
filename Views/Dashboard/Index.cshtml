@@ -1,194 +1,204 @@
-﻿
-@model MiniCMS.ViewModels.DashboardViewModel
+﻿@model MiniCMS.ViewModels.DashboardViewModel
 
 @{
     ViewData["Title"] = "Dashboard";
 }
 
-@section Styles {
-    <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
-}
+<link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
 
-<div class="container-fluid py-4">
+@*  Navigation  *@
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container-fluid">
 
- 
+        <a class="navbar-brand fw-bold" href="#">
+            Mini CMS
+        </a>
 
-    <div class="dashboard-header mb-5">
-        <h2 class="fw-bold">
-            <i class="bi bi-speedometer2"></i>
-            Admin Dashboard
-        </h2>
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
 
-        <p class="text-muted">
-            Welcome to Mini CMS Management Panel
-        </p>
-    </div>
+            <span class="navbar-toggler-icon"></span>
 
-     @*Total Statistics  *@
+        </button>
 
-    <div class="row g-4 mb-5">
+        <div class="collapse navbar-collapse" id="menu">
 
-        <div class="col-lg-3 col-md-6">
+            <ul class="navbar-nav ms-auto">
 
-            <div class="card stat-card bg-primary text-white shadow">
+                <li class="nav-item">
+                    <a asp-controller="Dashboard"
+                       asp-action="Index"
+                       class="nav-link active">
+                        Dashboard
+                    </a>
+                </li>
 
-                <div class="card-body">
-
-                    <div class="d-flex justify-content-between">
-
-                        <div>
-
-                            <h6>Total Posts</h6>
-
-                            <h2>@Model.TotalPosts</h2>
-
-                        </div>
-
-                        <i class="bi bi-file-earmark-text stat-icon"></i>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-
-            <div class="card stat-card bg-success text-white shadow">
-
-                <div class="card-body">
-
-                    <div class="d-flex justify-content-between">
-
-                        <div>
-
-                            <h6>Categories</h6>
-
-                            <h2>@Model.TotalCategories</h2>
-
-                        </div>
-
-                        <i class="bi bi-folder-fill stat-icon"></i>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-
-            <div class="card stat-card bg-warning text-dark shadow">
-
-                <div class="card-body">
-
-                    <div class="d-flex justify-content-between">
-
-                        <div>
-
-                            <h6>Tags</h6>
-
-                            <h2>@Model.TotalTags</h2>
-
-                        </div>
-
-                        <i class="bi bi-tags-fill stat-icon"></i>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-
-            <div class="card stat-card bg-danger text-white shadow">
-
-                <div class="card-body">
-
-                    <div class="d-flex justify-content-between">
-
-                        <div>
-
-                            <h6>Published</h6>
-
-                            <h2>@Model.PublishedPosts</h2>
-
-                        </div>
-
-                        <i class="bi bi-check-circle-fill stat-icon"></i>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    @* < Draft Card  *@
-
-    <div class="row mb-5">
-
-        <div class="col-md-6">
-
-            <div class="card shadow border-0">
-
-                <div class="card-body">
-
-                    <h5 class="text-secondary">
-                        Draft Posts
-                    </h5>
-
-                    <h1 class="display-5 fw-bold text-primary">
-                        @Model.DraftPosts
-                    </h1>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    @* Quick Actions  *@
-
-    <h4 class="mb-4 fw-bold">
-        Quick Actions
-    </h4>
-
-    <div class="row g-4">
-
-        <div class="col-lg-4">
-
-            <div class="card dashboard-card shadow-sm h-100">
-
-                <div class="card-body text-center">
-
-                    <i class="bi bi-file-earmark-text dashboard-icon text-primary"></i>
-
-                    <h4 class="mt-3">
+                <li class="nav-item">
+                    <a asp-controller="Post"
+                       asp-action="Index"
+                       class="nav-link">
                         Posts
-                    </h4>
+                    </a>
+                </li>
 
-                    <p class="text-muted">
-                        Create, Edit and Delete blog posts.
-                    </p>
+                <li class="nav-item">
+                    <a asp-controller="Category"
+                       asp-action="Index"
+                       class="nav-link">
+                        Categories
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a asp-controller="Tag"
+                       asp-action="Index"
+                       class="nav-link">
+                        Tags
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a asp-controller="Comment"
+                       asp-action="Index"
+                       class="nav-link">
+                        Comments
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+
+<div class="container py-5">
+
+    @* Head *@
+
+    <div class="dashboard-header">
+
+        <h2>Admin Dashboard</h2>
+
+        <p>Welcome to Mini CMS Management Panel</p>
+
+    </div>
+
+    @* Statistics *@
+
+    <div class="row g-4 mt-3">
+
+        <div class="col-md-3">
+
+            <div class="stat-box blue">
+
+                <h5>Total Posts</h5>
+
+                <h2>@Model.TotalPosts</h2>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="stat-box green">
+
+                <h5>Categories</h5>
+
+                <h2>@Model.TotalCategories</h2>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="stat-box orange">
+
+                <h5>Tags</h5>
+
+                <h2>@Model.TotalTags</h2>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="stat-box red">
+
+                <h5>Published</h5>
+
+                <h2>@Model.PublishedPosts</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+     @* Draft  *@
+
+    <div class="row mt-4">
+
+        
+        <div class="col-md-4">
+            <div class="draft-box">
+                <h5>Draft Posts</h5>
+                <h1>@Model.DraftPosts</h1>
+            </div>
+        </div>
+
+      
+        <div class="col-md-4">
+            <div class="draft-box text-center">
+
+               
+
+                <a asp-controller="Dashboard"
+                   asp-action="MostCommentedPosts"
+                   class="btn btn-dark mt-2">
+
+                   
+                    Most Commented Posts
+
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+   
+
+    @* Actions  *@
+
+    <div class="mt-5">
+
+        <h3 class="mb-4">
+
+            Quick Actions
+
+        </h3>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+
+                <div class="action-card">
+
+                    <h4>Posts</h4>
+
+                    <p>Manage blog posts</p>
 
                     <a asp-controller="Post"
                        asp-action="Index"
                        class="btn btn-primary">
 
-                        Manage Posts
+                        Open
 
                     </a>
 
@@ -196,29 +206,19 @@
 
             </div>
 
-        </div>
+            <div class="col-md-3">
 
-        <div class="col-lg-4">
+                <div class="action-card">
 
-            <div class="card dashboard-card shadow-sm h-100">
+                    <h4>Categories</h4>
 
-                <div class="card-body text-center">
-
-                    <i class="bi bi-folder-fill dashboard-icon text-success"></i>
-
-                    <h4 class="mt-3">
-                        Categories
-                    </h4>
-
-                    <p class="text-muted">
-                        Organize your blog categories.
-                    </p>
+                    <p>Manage categories</p>
 
                     <a asp-controller="Category"
                        asp-action="Index"
                        class="btn btn-success">
 
-                        Manage Categories
+                        Open
 
                     </a>
 
@@ -226,29 +226,19 @@
 
             </div>
 
-        </div>
+            <div class="col-md-3">
 
-        <div class="col-lg-4">
+                <div class="action-card">
 
-            <div class="card dashboard-card shadow-sm h-100">
+                    <h4>Tags</h4>
 
-                <div class="card-body text-center">
-
-                    <i class="bi bi-tags-fill dashboard-icon text-warning"></i>
-
-                    <h4 class="mt-3">
-                        Tags
-                    </h4>
-
-                    <p class="text-muted">
-                        Manage blog tags easily.
-                    </p>
+                    <p>Manage tags</p>
 
                     <a asp-controller="Tag"
                        asp-action="Index"
                        class="btn btn-warning">
 
-                        Manage Tags
+                        Open
 
                     </a>
 
@@ -256,33 +246,19 @@
 
             </div>
 
-        </div>
+            <div class="col-md-3">
 
+                <div class="action-card">
 
+                    <h4>Comments</h4>
 
-
-
-        <div class="col-lg-4">
-
-            <div class="card dashboard-card shadow-sm h-100">
-
-                <div class="card-body text-center">
-
-                    <i class="bi bi-folder-fill dashboard-icon text-success"></i>
-
-                    <h4 class="mt-3">
-                        Comments
-                    </h4>
-
-                    <p class="text-muted">
-                        Organize your blog Comments.
-                    </p>
+                    <p>Manage comments</p>
 
                     <a asp-controller="Comment"
                        asp-action="Index"
-                       class="btn btn-success">
+                       class="btn btn-dark">
 
-                        Manage Comment
+                        Open
 
                     </a>
 
@@ -291,10 +267,6 @@
             </div>
 
         </div>
-
-
-
-
 
     </div>
 

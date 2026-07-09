@@ -32,5 +32,18 @@ namespace MiniCMS.Services.Implementations
         {
             await _commentRepository.DeleteAsync(id);
         }
+
+
+        public async Task<List<Comment>> GetApprovedCommentsAsync(int postId)
+        {
+            return await _commentRepository.GetApprovedCommentsAsync(postId);
+        }
+
+        public async Task AddCommentAsync(Comment comment)
+        {
+            await _commentRepository.AddCommentAsync(comment);
+        }
+
+
     }
 }

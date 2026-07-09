@@ -3,40 +3,192 @@
   "WorkspaceRootPath": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\admin\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\admin\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\controllers\\admin\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:controllers\\admin\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\public\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\public\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\admin\\comment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\admin\\comment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\repositories\\implementations\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:repositories\\implementations\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\controllers\\dashboard\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:controllers\\dashboard\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\dashboard\\mostcommentedposts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\dashboard\\mostcommentedposts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\services\\implementations\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:services\\implementations\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\services\\interfaces\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:services\\interfaces\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\repositories\\implementations\\dashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:repositories\\implementations\\dashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\repositories\\interfaces\\idashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:repositories\\interfaces\\idashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\models\\viewmodels\\mostcommentedpostvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:models\\viewmodels\\mostcommentedpostvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\public\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\public\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\admin\\tag\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\admin\\tag\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\admin\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\admin\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\admin\\post\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\admin\\post\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\admin\\post\\deletedposts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\admin\\post\\deletedposts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\admin\\post\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\admin\\post\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\admin\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\admin\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\admin\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\admin\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\admin\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\admin\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\views\\admin\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:views\\admin\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\services\\implementations\\tagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:services\\implementations\\tagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\services\\implementations\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:services\\implementations\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\services\\interfaces\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:services\\interfaces\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\services\\implementations\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:services\\implementations\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\repositories\\interfaces\\itagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:repositories\\interfaces\\itagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\repositories\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:repositories\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\repositories\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:repositories\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\repositories\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:repositories\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\repositories\\implementations\\tagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:repositories\\implementations\\tagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\repositories\\implementations\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:repositories\\implementations\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\repositories\\implementations\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:repositories\\implementations\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\repositories\\implementations\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:repositories\\implementations\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\repositories\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:repositories\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\controllers\\admin\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:controllers\\admin\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\controllers\\admin\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:controllers\\admin\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\controllers\\admin\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:controllers\\admin\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\controllers\\admin\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:controllers\\admin\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\controllers\\public\\publiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:controllers\\public\\publiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\services\\interfaces\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:services\\interfaces\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\models\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:models\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\models\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:models\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\services\\interfaces\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:services\\interfaces\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|d:\\git github\\mini-cms-blog-platform\\models\\viewmodels\\commentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBC7924-D542-B304-7556-F5AF7D71BC86}|MiniCMS.csproj|solutionrelative:models\\viewmodels\\commentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,67 +202,484 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Public\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Public\\Index.cshtml",
               "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Public\\Index.cshtml",
               "RelativeToolTip": "Views\\Public\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIBAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-08T13:00:41.789Z",
+              "WhenOpened": "2026-07-09T06:48:03.99Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACkAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "MostCommentedPosts.cshtml",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Dashboard\\MostCommentedPosts.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dashboard\\MostCommentedPosts.cshtml",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Dashboard\\MostCommentedPosts.cshtml",
+              "RelativeToolTip": "Views\\Dashboard\\MostCommentedPosts.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-08T12:50:12.023Z",
+              "WhenOpened": "2026-07-09T13:14:57.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\wwwroot\\css\\site.css*",
-              "RelativeToolTip": "wwwroot\\css\\site.css*",
-              "ViewState": "AgIAAEQBAAAAAAAAAAAAAFQBAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-08T12:37:32.235Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Dashboard\\Index.cshtml*",
+              "RelativeToolTip": "Views\\Dashboard\\Index.cshtml*",
+              "ViewState": "AgIAAIkAAAAAAAAAAADwv5IAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-09T11:23:30.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.cshtml",
-              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Post\\index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Post\\index.cshtml",
-              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Post\\index.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Post\\index.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAmwCoAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-08T12:24:20.032Z",
+              "DocumentIndex": 4,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Dashboard\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Dashboard\\DashboardController.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Dashboard\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\Dashboard\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T12:03:28.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PostController.cs",
-              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Admin\\PostController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Admin\\PostController.cs",
-              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Admin\\PostController.cs",
-              "RelativeToolTip": "Controllers\\Admin\\PostController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAbAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Comment\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Comment\\Index.cshtml",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Comment\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Comment\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-09T12:56:10.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dashboard.css",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\wwwroot\\css\\dashboard.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\dashboard.css",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\wwwroot\\css\\dashboard.css",
+              "RelativeToolTip": "wwwroot\\css\\dashboard.css",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAFYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-09T11:27:24.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardService.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Implementations\\DashboardService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\DashboardService.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Implementations\\DashboardService.cs",
+              "RelativeToolTip": "Services\\Implementations\\DashboardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:23:27.223Z",
+              "WhenOpened": "2026-07-09T12:55:37.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDashboardService.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Interfaces\\IDashboardService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IDashboardService.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Interfaces\\IDashboardService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IDashboardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T13:12:07.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IDashboardRepository.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\IDashboardRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IDashboardRepository.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\IDashboardRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IDashboardRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T12:55:09.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwDEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T13:07:43.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MostCommentedPostVM.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Models\\ViewModels\\MostCommentedPostVM.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\MostCommentedPostVM.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Models\\ViewModels\\MostCommentedPostVM.cs",
+              "RelativeToolTip": "Models\\ViewModels\\MostCommentedPostVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T13:07:20.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DashboardRepository.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\DashboardRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\DashboardRepository.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\DashboardRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\DashboardRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAADwvzoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T12:53:51.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Tag\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Tag\\Create.cshtml",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Tag\\Create.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Tag\\Create.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-09T12:57:33.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DeletedPosts.cshtml",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Post\\DeletedPosts.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Post\\DeletedPosts.cshtml",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Post\\DeletedPosts.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Post\\DeletedPosts.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-09T11:56:26.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Post\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Post\\Create.cshtml",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Post\\Create.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Post\\Create.cshtml",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-09T12:56:19.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Post\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Post\\Edit.cshtml",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Post\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Post\\Edit.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAADwv6UAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-09T11:37:13.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Public\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Public\\Details.cshtml",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Public\\Details.cshtml",
+              "RelativeToolTip": "Views\\Public\\Details.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAALAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-09T06:53:58.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Category\\Index.cshtml",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Category\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Category\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-09T12:56:06.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "index.cshtml",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Post\\index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Post\\index.cshtml",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Post\\index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Post\\index.cshtml",
+              "ViewState": "AgIAACwBAAAAAAAAAAAAADoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-09T11:29:39.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Category\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Category\\Edit.cshtml",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Category\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Category\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-09T12:56:04.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Category\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Category\\Delete.cshtml",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Category\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Category\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-09T12:56:03.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Category\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Category\\Create.cshtml",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Views\\Admin\\Category\\Create.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Category\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-09T12:56:02.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TagService.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Implementations\\TagService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\TagService.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Implementations\\TagService.cs",
+              "RelativeToolTip": "Services\\Implementations\\TagService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T12:55:50.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ITagRepository.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\ITagRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\ITagRepository.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\ITagRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\ITagRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T12:55:22.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ICommentRepository.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\ICommentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\ICommentRepository.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\ICommentRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\ICommentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T09:03:59.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IPostRepository.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\IPostRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IPostRepository.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\IPostRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IPostRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T12:15:24.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PostService.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Implementations\\PostService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\PostService.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Implementations\\PostService.cs",
+              "RelativeToolTip": "Services\\Implementations\\PostService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAP8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T12:17:52.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CommentService.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Implementations\\CommentService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\CommentService.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Implementations\\CommentService.cs",
+              "RelativeToolTip": "Services\\Implementations\\CommentService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA7wAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T09:27:21.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\ICategoryRepository.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\ICategoryRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T12:55:07.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IRepository.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T11:54:18.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TagRepository.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\TagRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\TagRepository.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\TagRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\TagRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T12:55:06.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\Repository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\Repository.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\Repository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\Repository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T12:53:53.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\CategoryRepository.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\CategoryRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T12:53:39.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Admin\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Admin\\CategoryController.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Admin\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\Admin\\CategoryController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T12:53:22.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\PostRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\PostRepository.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\PostRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\PostRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T12:19:04.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Admin\\CommentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Admin\\CommentController.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Admin\\CommentController.cs",
+              "RelativeToolTip": "Controllers\\Admin\\CommentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T12:53:18.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "TagController.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Admin\\TagController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Admin\\TagController.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Admin\\TagController.cs",
+              "RelativeToolTip": "Controllers\\Admin\\TagController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T12:53:14.992Z",
               "EditorCaption": ""
             },
             {
@@ -119,54 +688,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PostRepository.cs",
-              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\PostRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Implementations\\PostRepository.cs",
-              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\PostRepository.cs",
-              "RelativeToolTip": "Repositories\\Implementations\\PostRepository.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAIwGkAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 33,
+              "Title": "CommentRepository.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\CommentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\CommentRepository.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Implementations\\CommentRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\CommentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:19:04.853Z",
+              "WhenOpened": "2026-07-09T09:04:07.003Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PostService.cs",
-              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Implementations\\PostService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\PostService.cs",
-              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Implementations\\PostService.cs",
-              "RelativeToolTip": "Services\\Implementations\\PostService.cs",
-              "ViewState": "AgIAAMoAAAAAAAAAAADwv94AAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:17:52.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 40,
               "Title": "IPostService.cs",
               "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Interfaces\\IPostService.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\IPostService.cs",
               "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Interfaces\\IPostService.cs",
               "RelativeToolTip": "Services\\Interfaces\\IPostService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA7wBcAAABdAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswCoAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T12:16:58.173Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IPostRepository.cs",
-              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\IPostRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IPostRepository.cs",
-              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Repositories\\Interfaces\\IPostRepository.cs",
-              "RelativeToolTip": "Repositories\\Interfaces\\IPostRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABdAAAAAAAAAA==",
+              "DocumentIndex": 38,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Admin\\PostController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Admin\\PostController.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Admin\\PostController.cs",
+              "RelativeToolTip": "Controllers\\Admin\\PostController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwN8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:15:24.637Z",
+              "WhenOpened": "2026-07-08T12:23:27.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "PublicController.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Public\\PublicController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Public\\PublicController.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Controllers\\Public\\PublicController.cs",
+              "RelativeToolTip": "Controllers\\Public\\PublicController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAkwCAAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T06:39:12.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAP4BAAAAAAAAAAAuwBMCAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-08T12:37:32.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAmwFYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T09:32:12.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Post.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Models\\Entities\\Post.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Post.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Models\\Entities\\Post.cs",
+              "RelativeToolTip": "Models\\Entities\\Post.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T09:41:16.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ICommentService.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Interfaces\\ICommentService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\ICommentService.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Services\\Interfaces\\ICommentService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\ICommentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T09:27:00.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Models\\Entities\\Comment.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Comment.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Models\\Entities\\Comment.cs",
+              "RelativeToolTip": "Models\\Entities\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T09:02:54.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CommentViewModel.cs",
+              "DocumentMoniker": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Models\\ViewModels\\CommentViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\CommentViewModel.cs",
+              "ToolTip": "D:\\GIT GITHUB\\Mini-CMS-Blog-Platform\\Models\\ViewModels\\CommentViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\CommentViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T09:03:29.347Z",
               "EditorCaption": ""
             }
           ]
