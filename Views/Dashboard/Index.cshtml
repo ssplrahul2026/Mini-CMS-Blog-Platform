@@ -1,0 +1,273 @@
+﻿@model MiniCMS.ViewModels.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
+
+@*  Navigation  *@
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container-fluid">
+
+        <a class="navbar-brand fw-bold" href="#">
+            Mini CMS
+        </a>
+
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a asp-controller="Dashboard"
+                       asp-action="Index"
+                       class="nav-link active">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a asp-controller="Post"
+                       asp-action="Index"
+                       class="nav-link">
+                        Posts
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a asp-controller="Category"
+                       asp-action="Index"
+                       class="nav-link">
+                        Categories
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a asp-controller="Tag"
+                       asp-action="Index"
+                       class="nav-link">
+                        Tags
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a asp-controller="Comment"
+                       asp-action="Index"
+                       class="nav-link">
+                        Comments
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+
+<div class="container py-5">
+
+    @* Head *@
+
+    <div class="dashboard-header">
+
+        <h2>Admin Dashboard</h2>
+
+        <p>Welcome to Mini CMS Management Panel</p>
+
+    </div>
+
+    @* Statistics *@
+
+    <div class="row g-4 mt-3">
+
+        <div class="col-md-3">
+
+            <div class="stat-box blue">
+
+                <h5>Total Posts</h5>
+
+                <h2>@Model.TotalPosts</h2>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="stat-box green">
+
+                <h5>Categories</h5>
+
+                <h2>@Model.TotalCategories</h2>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="stat-box orange">
+
+                <h5>Tags</h5>
+
+                <h2>@Model.TotalTags</h2>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="stat-box red">
+
+                <h5>Published</h5>
+
+                <h2>@Model.PublishedPosts</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+     @* Draft  *@
+
+    <div class="row mt-4">
+
+        
+        <div class="col-md-4">
+            <div class="draft-box">
+                <h5>Draft Posts</h5>
+                <h1>@Model.DraftPosts</h1>
+            </div>
+        </div>
+
+      
+        <div class="col-md-4">
+            <div class="draft-box text-center">
+
+               
+
+                <a asp-controller="Dashboard"
+                   asp-action="MostCommentedPosts"
+                   class="btn btn-dark mt-2">
+
+                   
+                    Most Commented Posts
+
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+   
+
+    @* Actions  *@
+
+    <div class="mt-5">
+
+        <h3 class="mb-4">
+
+            Quick Actions
+
+        </h3>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+
+                <div class="action-card">
+
+                    <h4>Posts</h4>
+
+                    <p>Manage blog posts</p>
+
+                    <a asp-controller="Post"
+                       asp-action="Index"
+                       class="btn btn-primary">
+
+                        Open
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="action-card">
+
+                    <h4>Categories</h4>
+
+                    <p>Manage categories</p>
+
+                    <a asp-controller="Category"
+                       asp-action="Index"
+                       class="btn btn-success">
+
+                        Open
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="action-card">
+
+                    <h4>Tags</h4>
+
+                    <p>Manage tags</p>
+
+                    <a asp-controller="Tag"
+                       asp-action="Index"
+                       class="btn btn-warning">
+
+                        Open
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="action-card">
+
+                    <h4>Comments</h4>
+
+                    <p>Manage comments</p>
+
+                    <a asp-controller="Comment"
+                       asp-action="Index"
+                       class="btn btn-dark">
+
+                        Open
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

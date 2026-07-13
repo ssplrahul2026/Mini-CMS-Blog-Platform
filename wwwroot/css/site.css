@@ -1,0 +1,532 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+
+.card {
+    border-radius: 15px;
+}
+
+.card-header {
+    padding: 18px 24px;
+    border-radius: 15px 15px 0 0 !important;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+.alert {
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card-header {
+    padding: 18px 24px;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+    .form-control:focus {
+        box-shadow: 0 0 0 0.2rem rgba(13,110,253,.15);
+    }
+
+.btn {
+    border-radius: 8px;
+}
+
+.form-label {
+    margin-bottom: 8px;
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .card-header {
+        border-radius: 15px 15px 0 0 !important;
+    }
+
+    .table tbody tr:hover {
+        background: #f8f9fa;
+        transition: .3s;
+    }
+
+    .btn {
+        border-radius: 8px;
+    }
+
+    .badge {
+        font-size: 14px;
+    }
+
+    .table td,
+    .table th {
+        vertical-align: middle;
+    }
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .card-header {
+        padding: 18px 24px;
+    }
+
+    .form-control {
+        border-radius: 10px;
+    }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(13,110,253,.15);
+        }
+
+    .btn {
+        border-radius: 8px;
+    }
+
+    .form-label {
+        margin-bottom: 8px;
+    }
+
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .card-header {
+        padding: 18px 24px;
+        border-radius: 15px 15px 0 0 !important;
+    }
+
+    .form-control {
+        border-radius: 10px;
+    }
+
+    .btn {
+        border-radius: 8px;
+    }
+
+    .alert {
+        border-radius: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    body {
+        background-color: #f8f9fa;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .table {
+        background-color: white;
+    }
+
+    .btn {
+        margin-right: 5px;
+    }
+
+
+
+    .container {
+        max-width: 900px;
+    }
+
+    .form-label {
+        font-weight: 500;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .form-check {
+        margin-bottom: 8px;
+    }
+
+    .btn {
+        min-width: 90px;
+    }
+    /*   create css*/
+    /*   Admin Form Styling*/
+
+    body {
+        background: #f4f7fc;
+    }
+
+    .card {
+        border: none;
+        border-radius: 18px;
+        transition: all .25s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-2px);
+        }
+
+    .card-header {
+        border-bottom: none;
+        padding: 15px 20px;
+    }
+
+    .card-body {
+        padding: 25px;
+    }
+
+    .form-control,
+    .form-select {
+        border-radius: 10px;
+        border: 1px solid #d8dde6;
+    }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 .15rem rgba(13,110,253,.20);
+        }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .form-check {
+        cursor: pointer;
+    }
+
+    .btn {
+        border-radius: 30px;
+    }
+
+    .btn-success {
+        font-weight: 600;
+    }
+
+    .btn-outline-secondary {
+        font-weight: 600;
+    }
+
+    .card-body::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .card-body::-webkit-scrollbar-thumb {
+        background: #b7bcc4;
+        border-radius: 10px;
+    }
+
+    .card-body::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /*   Comments Management*/
+
+    .table tbody tr {
+        transition: all .25s ease;
+    }
+
+        .table tbody tr:hover {
+            background: #f8f9ff;
+        }
+
+    .table td,
+    .table th {
+        vertical-align: middle;
+    }
+
+    .table thead th {
+        font-weight: 600;
+    }
+
+    .badge {
+        font-size: .82rem;
+    }
+
+    .card {
+        border-radius: 18px;
+    }
+
+    .btn {
+        border-radius: 25px;
+    }
+    /*   Category Management*/
+
+
+    .table tbody tr {
+        transition: all .25s ease;
+    }
+
+        .table tbody tr:hover {
+            background: #f8f9ff;
+        }
+
+    .table td,
+    .table th {
+        vertical-align: middle;
+    }
+
+    .table thead th {
+        font-weight: 600;
+    }
+
+    .card {
+        border-radius: 18px;
+    }
+
+    .btn {
+        border-radius: 30px;
+    }
+
+    .badge {
+        font-size: .85rem;
+    }
+    /*   Form Tools*/
+
+
+    .form-control,
+    .form-select {
+        height: 50px;
+        border-radius: 12px;
+    }
+
+    .filter-card {
+        background: #dbeafe;
+        border: 2px solid red;
+        border-radius: 20px;
+    }
+
+    .btn {
+        height: 50px;
+        font-weight: 600;
+    }
+
+    .post-card {
+        margin-bottom: 30px;
+    }
+    /*    public index css*/
+
+
+
+    .card {
+        border: none;
+        border-radius: 15px;
+    }
+
+        .card img {
+            border-radius: 15px 15px 0 0;
+        }
+
+    .card-title {
+        font-weight: 700;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        transition: .3s;
+        box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    }
+
+
+    body {
+        background: #eef2f7;
+        font-family: Segoe UI,Arial,sans-serif;
+    }
+
+    .edit-container {
+        max-width: 1000px;
+        margin: 35px auto;
+        padding: 0 15px;
+    }
+
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+        .page-header h2 {
+            margin: 0;
+            font-size: 28px;
+            color: #2c3e50;
+        }
+
+        .page-header p {
+            margin-top: 5px;
+            color: #777;
+        }
+
+    .btn-back {
+        background: #ffffff;
+        border: 1px solid #dcdcdc;
+        color: #333;
+        padding: 10px 18px;
+        text-decoration: none;
+        border-radius: 6px;
+    }
+
+        .btn-back:hover {
+            background: #f3f3f3;
+        }
+
+    .form-box {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .form-group {
+        margin-bottom: 22px;
+    }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #444;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ced4da;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .row-box {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+
+    .publish-box {
+        height: 45px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .image-box {
+        border: 1px solid #ddd;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 6px;
+        background: #fafafa;
+    }
+
+        .image-box img {
+            width: 220px;
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+    .button-group {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .btn-save {
+        background: #2563eb;
+        color: #fff;
+        border: none;
+        padding: 11px 24px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+        .btn-save:hover {
+            background: #1d4ed8;
+        }
+
+    .btn-cancel {
+        background: #6c757d;
+        color: #fff;
+        padding: 11px 24px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+
+        .btn-cancel:hover {
+            background: #5a6268;
+        }
+
+    .validation-summary {
+        color: red;
+        margin-bottom: 20px;
+    }
+
+    .text-danger {
+        color: red;
+        font-size: 14px;
+    }
+
+    @@media (max-width:768px) {
+
+        .row-box {
+            grid-template-columns: 1fr;
+        }
+
+        .page-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .button-group {
+            justify-content: flex-start;
+        }
+    }
